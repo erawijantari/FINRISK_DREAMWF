@@ -67,7 +67,7 @@ steps:
 
 ##?modify
   get_singularity_submission:
-    run: ~/data_pande/DREAM/FINRISK2022/infrastructure/model-to-data-challenge-workflow/get_submission.cwl
+    run: get_submission.cwl
     in:
       - id: submissionid
         source: "#submissionId"
