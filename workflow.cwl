@@ -159,6 +159,7 @@ steps:
     out:
       - id: predictions
 
+##?not sure if I need this, but if I gonna upload score.csv and stats.csv somewhere?
   upload_results:
     run: https://raw.githubusercontent.com/Sage-Bionetworks/ChallengeWorkflowTemplates/v3.1/cwl/upload_to_synapse.cwl
     in:
@@ -176,7 +177,7 @@ steps:
       - id: uploaded_fileid
       - id: uploaded_file_version
       - id: results
-
+##?move this step after score
   annotate_upload_results:
     run: https://raw.githubusercontent.com/Sage-Bionetworks/ChallengeWorkflowTemplates/v3.1/cwl/annotate_submission.cwl
     in:
